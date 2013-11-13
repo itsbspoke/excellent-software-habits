@@ -1,0 +1,32 @@
+<% content_for(:title, "Welcome to TechBreakfast CLT") %>
+<!-- BODY-->
+<body data-spy="scroll" data-target=".scroller-spy" data-twttr-rendered="true">
+<!--START MAIN-WRAPPER--> 
+<div class="main-wrapper">
+  <%= partial "top_section" %>
+  <!-- MAIN CONTENT CONTAINER -->
+  <div class="container">
+    <!-- START MARKETING DIV-->
+    <div class="marketing">
+
+      <%= partial "service" %>
+
+      <%= partial "projects" %>
+
+      <%= partial "about_us" %>
+
+    </div>
+    <!-- END MAIN WRAPPER-->
+    <%= partial "footer" %>
+  </div>
+</div>
+<% partial "switcher" %>
+
+<%= partial "javascripts" %>
+
+<%= partial "scroller" %>
+
+<%= partial "slider" %>
+
+
+</body>

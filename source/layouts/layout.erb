@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><%= yield_content(:title) %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<%= partial "stylesheets" %>
+<%= partial "icons" %>
+</head>
+<!--/ HEAD-->
+<%= yield %>
+<script type="text/javascript">
+var _gauges = _gauges || [];
+(function() {
+  var t   = document.createElement('script');
+  t.type  = 'text/javascript';
+  t.async = true;
+  t.id    = 'gauges-tracker';
+  t.setAttribute('data-site-id', '51d01a62108d7b6480000014');
+  t.src = '//secure.gaug.es/track.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(t, s);
+})();
+  </script>
+</html>
