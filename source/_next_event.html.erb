@@ -1,0 +1,7 @@
+<% 
+  if next_event_is_ifp?
+%>
+    <%= partial "next_ifp_event" %>
+  <% else %>
+    <%= partial "next_tb_event" %>
+  <% end %>
